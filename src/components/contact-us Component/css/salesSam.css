@@ -1,0 +1,90 @@
+.salesSam {
+	width: 100%;
+	margin: 120px 0px 0px 0px;
+	min-height: 80vh;
+}
+
+.salesSam__container {
+	margin: 30px auto;
+}
+
+.salesSam__help_info {
+	display: flex;
+}
+
+.salesSam__help_info li {
+	flex: 0 1 25%;
+	font-size: 16px;
+	font-weight: 500;
+	opacity: 0.7;
+	padding: 0px 10px;
+}
+
+.salesSam__expert {
+	margin: 20px 0px 0px 0px;
+}
+
+.salesSam__expert_list {
+	border-radius: 10px;
+	display: flex;
+	position: relative;
+	margin: 0px 0px 15px 0px;
+}
+
+.salesSam__expert_list:last-child {
+	margin: 0px 0px 0px 0px;
+}
+
+.salesSam__expert_list::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: -7px;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(218, 218, 218);
+}
+
+.salesSam__expert_list li {
+	flex: 0 1 25%;
+}
+
+.salesSam__li {
+	padding: 10px 10px;
+	font-size: 16px;
+	font-weight: 500;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.first a {
+	color: #222;
+	transition: color 0.5s ease 0s;
+}
+
+.thrid {
+	color: #d71f33;
+}
+
+.first a:hover {
+	color: #d71f33;
+}
+
+@media (max-width:768px) {
+	.salesSam__expert_list {
+		flex-direction: column;
+	}
+
+	.salesSam__help_info {
+		display: none;
+	}
+}
+
+@media (max-width:425px) {
+	.salesSam {
+		margin: 100px 0px 0px 0px;
+		min-height: 0vh;
+	}
+
+}

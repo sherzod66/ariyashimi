@@ -1,0 +1,154 @@
+.services {
+	width: 100%;
+	padding: 30px 0px;
+	color: #222222;
+}
+
+.services__container {
+	position: relative;
+	z-index: 1;
+}
+
+.services__row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -20px;
+	padding: 200px 0px 0px 0px;
+}
+
+.services__column {
+	display: block;
+	flex: 0 1 33.333%;
+	padding: 0px 20px;
+	color: #222222;
+	position: relative;
+}
+
+.services__column:first-child {
+	left: -100%;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.services__column:last-child {
+	right: -100%;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.services__column:nth-child(2) {
+	bottom: -100px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+.services__column._active:first-child {
+	left: 0%;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s ease 0.2s;
+
+}
+
+.services__column._active:last-child {
+	right: 0;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s ease 0.2s;
+}
+
+.services__column._active:nth-child(2) {
+	bottom: 0;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s ease 0.2s;
+}
+
+.services__column::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 100%;
+	background-color: #d71f33;
+	border-radius: 11px;
+	transition: all 0.5s ease 0s;
+}
+
+.services__column:hover::before {
+	transform: rotate(4.7deg) translate(15px, 20px);
+	opacity: 0.9;
+}
+
+.services__item {
+	border-radius: 10px;
+	transition: all 0.2s ease 0s;
+	position: relative;
+	background-color: #fff;
+	z-index: 2;
+	text-align: center;
+	padding: 10px 0px;
+	height: 100%;
+}
+
+.services__item button {
+	background-color: #222222;
+	color: #fff;
+}
+
+.services__item:hover button {
+	background-color: #ffffff;
+	color: #222222;
+}
+
+.services__item:hover {
+	background-color: #d71f33;
+	color: #fff;
+	box-shadow: 0px 0px 10px #222222c5;
+}
+
+.services__icon {
+	font-size: 52px;
+	text-align: center;
+}
+
+.services__img {}
+
+.services__title p {
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 46px;
+	margin-bottom: 15px;
+	transition: all 0.5s ease 0s;
+}
+
+.services__tetx {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	transform: translate(0px, 0px);
+	transition: all 0.5s ease 0s;
+}
+
+@media (max-width: 880px) {
+	.services__column {
+		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 600px) {
+	.services__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px 0px;
+		padding: 200px 10px 0px 10px;
+	}
+
+	.services__column {
+		flex: 1 1 100%;
+		padding: 0px 0px;
+		margin: 10px 0px;
+	}
+
+}

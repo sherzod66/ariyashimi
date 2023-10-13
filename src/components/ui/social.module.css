@@ -1,0 +1,135 @@
+.requisites {
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+	z-index: 2;
+}
+
+.social li {
+	width: 50px;
+	height: 50px;
+	background-color: #ED3237;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0px, 50px);
+	transition: all ease 0.3s 0s;
+	box-shadow: 0px 0px 10px #fff;
+}
+
+.social li:hover {
+	background-color: #810004;
+}
+
+.social.show li:nth-child(1) {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	transition: all ease 0.5s 0s;
+}
+
+.social.show li:nth-child(2) {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	transition: all ease 0.5s 0.2s;
+}
+
+.social.show li:nth-child(3) {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	transition: all ease 0.5s 0.4s;
+}
+
+.social li .icons {
+	transform: translate(0px, 50px);
+}
+
+.social.show li .icons:nth-child(1) {
+	transition: all ease 0.5s 0.1s;
+	transform: translate(0px, 0px);
+}
+
+.social.show li .icons:nth-child(2) {
+	transition: all ease 0.5s 0.3s;
+	transform: translate(0px, 0px);
+}
+
+.social.show li .icons:nth-child(2) {
+	transition: all ease 0.5s 0.5s;
+	transform: translate(0px, 0px);
+}
+
+.requisites__button {
+	width: 50px;
+	height: 50px;
+	background-color: #ED3237;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	transition: all ease 0.3s 0s;
+	box-shadow: 0px 0px 10px #fff;
+}
+
+.requisites__button:hover {
+	background-color: #810004;
+}
+
+.requisites__button .icons {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s ease-in 0s;
+}
+
+.requisites__button.show .icons:first-child {
+	top: 100px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.requisites__button .icons:first-child {
+	top: 50%;
+	opacity: 1;
+	visibility: visible;
+}
+
+.requisites__button.show .icons:last-child {
+	top: 50%;
+	opacity: 1;
+	visibility: visible;
+}
+
+.requisites__button .icons:last-child {
+	top: 100px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.icons {
+	font-size: 30px;
+	color: aliceblue;
+}
+
+@media (max-width: 768px) {
+	.requisites {
+		position: fixed;
+		right: 50px;
+		bottom: 50px;
+	}
+}
+
+@media (max-width: 425px) {
+	.requisites {
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+	}
+}

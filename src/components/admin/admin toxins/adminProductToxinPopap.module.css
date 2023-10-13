@@ -1,0 +1,170 @@
+.popup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #222222d0;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	justify-content: center;
+}
+
+.popup__body {
+	width: 700px;
+	background-color: #222;
+	padding: 15px;
+	border-radius: 12px;
+	overflow-y: auto;
+	position: relative;
+}
+
+.popup_die {
+	display: none;
+}
+
+.popup_die.active {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #ffffff9d;
+	z-index: 2;
+}
+
+.popup__form input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 12px;
+	border: 2px solid transparent;
+	transition: border-color 0.5s ease 0s;
+	font-size: 16px;
+}
+
+.popup__form input:focus {
+	border: 2px solid #d71f33;
+}
+
+.popup__form textarea {
+	display: block;
+	font-size: 16px;
+	width: 100%;
+	padding: 10px;
+	border-radius: 12px;
+	border: 2px solid transparent;
+	transition: border-color 0.5s ease 0s;
+	resize: vertical;
+}
+
+.popup__form textarea:focus {
+	border: 2px solid #d71f33;
+}
+
+.popup__form label {
+	display: block;
+	font-size: 16px;
+	line-height: 22px;
+	margin: 5px 0px;
+}
+
+.popup__radio h2 {
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.popup__radio input {
+	display: inline;
+	width: 20px;
+	height: 20px;
+}
+
+.popup__form button {
+	margin-top: 15px;
+	width: 100%;
+	padding: 15px 0px;
+	border-radius: 12px;
+	font-size: 18px;
+	font-weight: 500;
+	transition: background 0.5s ease 0s;
+}
+
+.popup__form button:hover {
+	background-color: #d71f33;
+	color: #fff;
+}
+
+.table {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.table__info {
+	display: flex;
+	background-color: rgb(0, 63, 63);
+}
+
+.table__info li {
+	flex: 0 1 33.333%;
+	border: 1px solid #fcfcfc;
+	padding: 5px;
+}
+
+
+
+.product__table {
+	position: relative;
+	padding: 0px 0px 0px 0px;
+}
+
+/* 
+.product__table__minus {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: inline-block;
+	font-size: 28px;
+	font-family: 500;
+	background-color: #d71f33;
+	cursor: pointer;
+} */
+
+.product__table__body {
+	display: flex;
+}
+
+.product__table textarea {
+	border-radius: 0px;
+	resize: vertical;
+	background-color: transparent;
+	position: relative;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.add__table {
+	width: 100%;
+	margin-top: 15px;
+	font-size: 28px;
+	position: relative;
+	height: 40px;
+}
+
+.add__table p {
+	position: absolute;
+	right: 0;
+	top: -10px;
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 28px;
+	text-align: right;
+	cursor: pointer;
+	padding: 5px;
+	font-family: 500;
+	background-color: #d71f33;
+}

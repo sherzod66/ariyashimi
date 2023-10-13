@@ -1,0 +1,81 @@
+.admin {
+	width: 100%;
+}
+
+.admin__bar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: 100%;
+	padding: 40px 24px;
+	background-color: aliceblue;
+	box-shadow: 0px 0px 10px #1a202ca8;
+}
+
+.admin__bar_logo {
+	width: 70px;
+	height: 70px;
+}
+
+.admin__bar_logo img {
+	max-width: 100%;
+}
+
+.admin__bar_list {
+	margin: 40px 0px 0px 0px;
+}
+
+.admin__bar_list a {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0.20000000298023224px;
+	color: #718096;
+}
+
+.admin__bar_list li {
+	margin-bottom: 10px;
+}
+
+.admin__bar_list ._active {
+	background-color: #ed3237;
+	padding: 5px;
+	border-radius: 12px;
+}
+
+.admin__bar_list ._active a {
+	color: #ffffff;
+}
+
+.admin__dashboard {
+	width: 100%;
+	background-color: #dbdada;
+	padding-left: 250px;
+}
+
+.admin__dashboard h1 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 31px;
+	letter-spacing: 0px;
+	color: #1A202C;
+	padding: 20px 0px 0px 30px;
+}
+
+.admin__exit {
+	position: absolute;
+	left: 10;
+	bottom: 10px;
+	background-color: #1A202C;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 10px;
+	letter-spacing: 1px;
+	transition: background 0.5s ease 0s;
+}
+
+.admin__exit:hover {
+	background-color: #d71f33;
+}

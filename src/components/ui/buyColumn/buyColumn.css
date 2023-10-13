@@ -1,0 +1,44 @@
+.buy-column {
+	width: 100%;
+	background-color: #d71f33;
+	color: #fff;
+	padding: 20px 0px;
+	margin: 120px 0px 0px 0px;
+}
+
+.buy-column__container {}
+
+.buy-column__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.buy-column__item button {
+	display: block;
+}
+
+.buy-column__item p {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+	.buy-column__container {
+		padding: 0px 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.buy-column {
+		margin: 50px 0px 0px 0px;
+	}
+
+	.buy-column__row {
+		display: flex;
+		justify-content: flex-start;
+		align-items: stretch;
+		flex-direction: column;
+	}
+}

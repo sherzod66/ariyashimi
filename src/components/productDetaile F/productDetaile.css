@@ -1,0 +1,158 @@
+.theproduct {
+	margin: 120px 0px 0px 0px;
+}
+
+.theproduct__conatiner {}
+
+.theproduct__row {
+	display: flex;
+	margin: 50px 0px 0px 0px;
+}
+
+.theproduct__image {
+	flex: 0 1 30%;
+	height: 370px;
+}
+
+.theproduct__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.theproduct__column {
+	padding: 0px 0px 0px 50px;
+	flex: 0 1 70%;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.theproduct__column h4 {
+	margin: 10px 0px 0px 0px;
+	font-weight: 500;
+}
+
+.theproduct__title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #d71f33;
+	margin-bottom: 20px;
+}
+
+.theproduct__sub-title {
+	max-width: 390px;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+
+.theproduct__description {
+	margin-bottom: 20px;
+}
+
+.theproduct__table {}
+
+.theproduct__table-info {
+	display: flex;
+	background-color: #d71f33;
+}
+
+.theproduct__table-info li {
+	flex: 0 1 33.333%;
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	border-right: 1px solid #ffffff;
+}
+
+.theproduct__table-info li:last-child {
+	border-right: 0px solid #0a0a0a;
+}
+
+
+.theproduct__table-toxins {
+	display: flex;
+	background-color: #d71f33;
+}
+
+.theproduct__table-toxins li {
+	flex: 0 1 50%;
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	border-right: 1px solid #ffffff;
+}
+
+.theproduct__table-toxins li:last-child {
+	border-right: 0px solid #0a0a0a;
+}
+
+
+.theproduct__table-data {
+	display: flex;
+	background-color: #b82d3d;
+	color: #fff;
+}
+
+.theproduct__table-data li {
+	flex: 0 1 33.333%;
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	padding: 5px;
+	text-align: center;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.theproduct__table-data li:last-child {
+	border-right: 0px solid #ffffff;
+}
+
+.theproduct__table-data-toxins {
+	display: flex;
+	background-color: #b82d3d;
+	color: #fff;
+}
+
+.theproduct__table-data-toxins li {
+	flex: 0 1 50%;
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	padding: 5px;
+	text-align: center;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.theproduct__table-data-toxins li:last-child {
+	border-right: 0px solid #ffffff;
+}
+
+@media (max-width: 1024px) {
+	.theproduct__row {
+		padding: 0px 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.theproduct__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 30px 0px 0px 0px;
+	}
+
+	.theproduct__image {
+		flex: 1 1 100%;
+		height: 370px;
+	}
+
+	.theproduct__column {
+		padding: 50px 0px 0px 0px;
+		flex: 1 1 100%;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+}

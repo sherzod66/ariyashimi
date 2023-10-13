@@ -1,0 +1,152 @@
+.product {
+	margin-top: 24px;
+}
+
+.product__body {
+	padding: 0px 10px;
+}
+
+.product__navigate_bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product__input_body {
+	width: 359px;
+	border-radius: 14.274842262268066px;
+	border: 2px solid #d71f33;
+	overflow: hidden;
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.product__input_body input {
+	width: 100%;
+	padding: 10px 10px 10px 40px;
+	height: 100%;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	color: #d71f33;
+}
+
+.search {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translate(0px, -50%);
+	font-size: 20px;
+	color: #858585;
+}
+
+.product__addNew {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 21px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: center;
+	background-color: #d71f33;
+	color: #fff;
+	padding: 13px 20px 13px 30px;
+	border-radius: 12px;
+	position: relative;
+	cursor: pointer;
+}
+
+.plus {
+	position: absolute;
+	left: 5px;
+	top: 49%;
+	font-size: 25px;
+	transform: translate(0px, -50%);
+}
+
+.adminFeedback__column {
+	margin: 30px 0px 0px 0px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.adminFeedback__column::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -10px;
+	width: 100%;
+	height: 2px;
+	background-color: #718096;
+}
+
+.adminFertilizers__image {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+.adminFertilizers__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.adminFertilizers__image p {
+	padding: 5px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #000;
+	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.icon {
+}
+
+.adminFeedback__data p:first-child {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+}
+
+.adminFeedback__data p:last-child {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0.20000000298023224px;
+	color: #718096;
+}
+
+.adminFeedback__delete {
+	background-color: #ed3237;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 8px;
+	align-self: center;
+	cursor: pointer;
+}
+
+.adminFeedback__delete.loading {
+	pointer-events: none;
+	background-color: #793d3f;
+}
+
+.adminFeedback__detail {
+	background-color: transparent;
+	color: #000;
+	border: 1px solid #718096;
+	padding: 10px 20px;
+	border-radius: 8px;
+	align-self: center;
+	cursor: pointer;
+}

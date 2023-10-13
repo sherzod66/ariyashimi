@@ -1,0 +1,263 @@
+.header__list {
+	display: flex;
+	margin-left: 84px;
+}
+
+.header__link_line {
+	color: #000000;
+	font-weight: 500;
+}
+
+.header__list li {
+	margin: 0px 20px 0px 0px;
+	font-size: 16px;
+	position: relative;
+}
+
+._this {
+	color: #d71f33;
+}
+
+
+
+@media (hover: hover) {
+	.header__list li:nth-child(2):hover .header__list_popup {
+		top: 7px;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.header__list li:nth-child(3):hover .header__list_popup {
+		top: 7px;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.header__list li:nth-child(4):hover .header__list_popup {
+		top: 7px;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.header__list li:nth-child(5):hover .header__list_popup {
+		top: 7px;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.header__list li:nth-child(6):hover .header__list_popup {
+		top: 7px;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.header__list li:hover::after {
+		content: '';
+		position: absolute;
+		bottom: -3px;
+		left: 0px;
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: red;
+		animation: line 0.3s linear 0s 1 normal none;
+	}
+}
+
+@media (hover:none) {
+	.header__list li:active:after {
+		content: '';
+		position: absolute;
+		bottom: -3px;
+		left: 0px;
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: red;
+		animation: line 0.3s linear 0s 1 normal none;
+	}
+}
+
+
+.header__list_popup {
+	position: absolute;
+	min-width: none;
+	min-width: 300px;
+	display: none;
+	left: 0;
+	top: 30px;
+	display: flex;
+	z-index: 2;
+	padding: 15px 0px 0px 0px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease 0s;
+}
+
+.header__list_sub p {
+	font-size: 18px;
+	line-height: 22px;
+	margin: 0px 0px 8px 0px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.header__list_sub a {
+	color: #ffffff;
+}
+
+.header__list_sub ._thisPage {
+	font-weight: 700;
+	text-shadow: 0px 0px 10px #ff001e;
+}
+
+.header__list_sub {
+	background-color: #2e2e2e;
+	padding: 10px;
+}
+
+.header__list_sub li {
+	line-height: 20px;
+	margin: 0px 0px 8px 0px;
+}
+
+@keyframes line {
+	0% {
+		width: 0%;
+	}
+
+	50% {
+		width: 50%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+.header__list li:last-child {
+	margin: 0px 0px 0px 0px;
+}
+
+@media (max-width:768px) {
+	.arrow {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 12px 6px 0 6px;
+		border-color: #242424 transparent transparent transparent;
+	}
+
+	.header__list {
+		position: fixed;
+		right: -100%;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		flex-direction: column;
+		margin-left: 0px;
+		background-color: rgb(255, 255, 255);
+		align-items: center;
+		padding: 100px 0px 0px 0px;
+		overflow-y: auto;
+		transition: all 0.8s ease 0s;
+		z-index: 3;
+	}
+
+	.header__list.burger {
+		right: 0%;
+	}
+
+	.header__list>li {
+		line-height: 32px;
+		font-size: 22px;
+		margin: 0px 0px 0px 0px;
+		text-align: center;
+		transform: translate(500px, 0px);
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.header__list.burger li:nth-child(1) {
+		transform: translate(0px, 0px);
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.5s ease 0s;
+	}
+
+	.header__list.burger li:nth-child(2) {
+		transform: translate(0px, 0px);
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.5s ease 0.2s;
+	}
+
+	.header__list.burger li:nth-child(3) {
+		transform: translate(0px, 0px);
+		opacity: 1;
+		visibility: visible;
+		transition: transform 0.5s ease 0.4s;
+	}
+
+	.header__list.burger li:nth-child(4) {
+		transform: translate(0px, 0px);
+		opacity: 1;
+		visibility: visible;
+		transition: transform 0.5s ease 0.6s;
+	}
+
+	.header__list.burger li:nth-child(5) {
+		transform: translate(0px, 0px);
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.5s ease 0.8s;
+	}
+
+	.header__list.burger li:nth-child(6) {
+		transform: translate(0px, 0px);
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.5s ease 1s;
+	}
+
+	.header__list_popup {
+		flex-direction: column;
+		transform: scale(0);
+		padding: 0px 0px 0px 0px;
+	}
+
+	.header__list_popup.active {
+		position: static;
+		transform: scale(1);
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.header__list_sub p {
+		font-size: 18px;
+		line-height: 22px;
+		margin: 0px 0px 8px 0px;
+		font-weight: 500;
+	}
+
+	.header__list_sub {
+		background-color: #2c2e30;
+
+	}
+
+	.header__list_sub li {
+		line-height: 20px;
+		margin: 0px 0px 8px 0px;
+	}
+
+	.header__list_sub li:last-child {
+		margin: 0px;
+	}
+}
+
+@media (max-width:425px) {
+	.header__list {
+		width: 80%;
+	}
+}
